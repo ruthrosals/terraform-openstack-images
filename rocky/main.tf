@@ -1,3 +1,4 @@
+# Rocky OpenStack Images
 resource "openstack_images_image_v2" "rocky_server_84_x86_64_qcow2" {
   count            = var.enable_rocky_84_x86_64_qcow2 ? 1 : 0
   name             = "rocky_server_84_x86_64_qcow2"
@@ -6,7 +7,6 @@ resource "openstack_images_image_v2" "rocky_server_84_x86_64_qcow2" {
   disk_format      = "qcow2"
   visibility       = "public"
   properties = {
-    key       = "value"
     os_distro = "rocky"
   }
 }
