@@ -7,7 +7,7 @@
 Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenStack.
 
 
-## Images
+## Images 
 
 | Cloud Image | versions | x86_64 | aarch64 | QCOW2 | RAW |
 | ------------------- | --- | ---| ---| ----- | --- |
@@ -31,7 +31,7 @@ Terraform module for managing QCOW2 and RAW AARCH64 and x86_64 images for OpenSt
 | Fedora | 32 | X | X | X | X |
 | Fedora | 33 | X | X | X | X |
 | Fedora | 34 | | X | X | X |
-| Fedora-Atomic | 29 | X | | X | X |
+| Fedora-Atomic | 29 | X | | X | X | 
 | Flatcar Linux | Stable | X | | X | X |
 | Flatcar Linux | Alpha | X | X | X | X |
 | Flatcar Linux | Beta | X | | X | X |
@@ -210,8 +210,8 @@ cd terraform-openstack-images
 
 ## Assets
 
-* [main.tf](main.tf)
-* [variables.tf](variables.tf)
+* [main.tf](main.tf) 
+* [variables.tf](variables.tf) 
 
 ### Archlinux
 
