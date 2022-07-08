@@ -1,5 +1,3 @@
-![Ampere Computing](https://avatars2.githubusercontent.com/u/34519842?s=400&u=1d29afaac44f477cbb0226139ec83f73faefe154&v=4)
-
 # terraform-openstack-images
 
 Terraform module for managing QCOW2 images for OpenStack.
@@ -7,7 +5,7 @@ Terraform module for managing QCOW2 images for OpenStack.
 
 ## Images
 
-| Cloud Image | versions |
+| Cloud Image | Versions |
 | ------------------- | --- |
 | CentOS | 7 |
 | CentOS | 8 |
@@ -26,7 +24,7 @@ Include something like the following in your code:
 ```
 # Operating System Images for Glance using terraform-openstack-images module
 module "glance_images" {
-  source = "github.com/amperecomputing/terraform-openstack-images"
+  source = "github.com/breqwatr/terraform-openstack-images"
   # Centos
   enable_centos_7_x86_64_qcow2               = false
   enable_centos_8_x86_64_qcow2               = false
