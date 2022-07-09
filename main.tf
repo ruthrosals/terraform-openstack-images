@@ -18,6 +18,7 @@ module "fedora" {
 }
 module "ubuntu" {
   source                         = "./ubuntu"
+  enable_ubuntu_2204_amd64_qcow2 = var.enable_ubuntu_2204_amd64_qcow2
   enable_ubuntu_2004_amd64_qcow2 = var.enable_ubuntu_2004_amd64_qcow2
   enable_ubuntu_1804_amd64_qcow2 = var.enable_ubuntu_1804_amd64_qcow2
 }

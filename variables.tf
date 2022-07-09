@@ -22,6 +22,10 @@ variable "enable_fedora_server_36_x86_64_qcow2" {
   description = "Enable Fedora 33 qcow2 images"
   type        = bool
 }
+variable "enable_ubuntu_2204_amd64_qcow2" {
+  description = "Enable Ubuntu 22.04 AMD64 qcow2 image"
+  type        = bool
+}
 variable "enable_ubuntu_2004_amd64_qcow2" {
   description = "Enable Ubuntu 20.04 AMD64 qcow2 image"
   type        = bool

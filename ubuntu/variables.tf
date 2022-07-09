@@ -1,3 +1,13 @@
+## Ubuntu 22.04
+variable "enable_ubuntu_2204_amd64_qcow2" {
+  description = "Enable Ubuntu 22.04"
+  default     = 0
+}
+variable "ubuntu2204_name" {
+  type = string
+  description = "Ubuntu 22.04 Image"
+  default = "Ubuntu 22.04"
+}
 ## Ubuntu 20.04
 variable "enable_ubuntu_2004_amd64_qcow2" {
   description = "Enable Ubuntu 20.04"
