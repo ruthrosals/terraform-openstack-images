@@ -76,43 +76,9 @@ terraform apply -auto-approve
 
 Download the source
 ```
-git clone https://github.com/AmpereComputing/terraform-openstack-images
+git clone https://github.com/breqwatr/terraform-openstack-images
 cd terraform-openstack-images
 ```
-
-## Assets
-
-* [main.tf](main.tf)
-* [variables.tf](variables.tf)
-
-### CentOS
-
-* [centos/main.tf](centos/main.tf)
-* [centos/variables.tf](centos/variables.tf)
-
-### CirrOS
-
-* [cirros/main.tf](cirros/main.tf)
-* [cirros/variables.tf](cirros/variables.tf)
-
-### Debian
-
-* [debian/main.tf](debian/main.tf)
-* [debian/main.tf](debian/variables.tf)
-
-### Fedora
-
-* [fedora/main.tf](fedora/main.tf)
-* [fedora/variables.tf](fedora/variables.tf)
-
-### Ubuntu
-
-* [ubuntu/main.tf](ubuntu/main.tf)
-* [ubuntu/variables.tf](ubuntu/variables.tf)
-
-### Examples
-
-* [example/main.tf](example/main.tf)
 
 ## References
 
