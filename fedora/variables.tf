@@ -8,7 +8,7 @@ variable "fedora36_name" {
   description = "Fedora 36 Image"
   default     = "Fedora 36"
 }
-variable "fedora36__download_URL" {
+variable "fedora36_download_URL" {
   type        = string
   description = "https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/36/Cloud/x86_64/images/Fedora-Cloud-Base-36-1.5.x86_64.qcow2"
 }

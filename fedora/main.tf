@@ -2,7 +2,7 @@
 resource "openstack_images_image_v2" "fedora_server_36_x86_64_qcow2" {
   count            = var.enable_fedora_server_36_x86_64_qcow2 ? 1 : 0
   name             = var.fedora36_name
-  image_source_url = var.fedora36__download_URL
+  image_source_url = var.fedora36_download_URL
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility
