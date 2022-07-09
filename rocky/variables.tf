@@ -8,7 +8,7 @@ variable "rocky84_name" {
   description = "Rocky 8.4 Image"
   default     = "Rocky 8.4"
 }
-variable "rocky84__download_URL" {
+variable "rocky84_download_URL" {
   type        = string
   description = "https://define-technology.com/rocky/rocky-8.4-cloudimage-final.qcow2"
 }

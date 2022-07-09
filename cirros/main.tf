@@ -2,7 +2,7 @@
 resource "openstack_images_image_v2" "cirros-051-x86_64-qcow2" {
   count            = var.enable_cirros_051_x86_64_qcow2 ? 1 : 0
   name             = var.cirros051_name
-  image_source_url = var.cirros051__download_URL
+  image_source_url = var.cirros051_download_URL
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility
