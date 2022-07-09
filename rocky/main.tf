@@ -2,7 +2,7 @@
 resource "openstack_images_image_v2" "rocky_server_84_x86_64_qcow2" {
   count            = var.enable_rocky_84_x86_64_qcow2 ? 1 : 0
   name             = var.rocky84_name
-  image_source_url = var.rocky84_download_URL
+  image_source_url = "https://define-technology.com/rocky/rocky-8.4-cloudimage-final.qcow2"
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility

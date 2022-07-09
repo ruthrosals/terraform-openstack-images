@@ -2,7 +2,7 @@
 resource "openstack_images_image_v2" "debian_9_openStack_amd64_qcow2" {
   count            = var.enable_debian_9_amd64_qcow2 ? 1 : 0
   name             = var.debian9_name
-  image_source_url = var.debian9_download_URL
+  image_source_url = "https://cdimage.debian.org/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2"
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility
@@ -16,7 +16,7 @@ resource "openstack_images_image_v2" "debian_9_openStack_amd64_qcow2" {
 resource "openstack_images_image_v2" "debian_10_openStack_amd64_qcow2" {
   count            = var.enable_debian_10_amd64_qcow2 ? 1 : 0
   name             = var.debian10_name
-  image_source_url = var.debian10_download_URL
+  image_source_url = "https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2"
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility
