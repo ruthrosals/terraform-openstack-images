@@ -8,10 +8,6 @@ variable "debian9_name" {
   description = "Debian 9 Image"
   default     = "Debian 9"
 }
-variable "debian9_download_URL" {
-  type        = string
-  description = "https://cdimage.debian.org/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2"
-}
 ## Debian 10
 variable "enable_debian_10_amd64_qcow2" {
   description = "Enable Debian 10"
@@ -21,10 +17,6 @@ variable "debian10_name" {
   type        = string
   description = "Debian 10 Image"
   default     = "Debian 10"
-}
-variable "debian10_download_URL" {
-  type        = string
-  description = "https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2"
 }
 ## Generic Variables
 variable "image_container_format" {

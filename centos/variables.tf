@@ -8,10 +8,6 @@ variable "centos7_name" {
   description = "Centos 7 Image"
   default     = "Centos 7"
 }
-variable "centos7_download_URL" {
-  type        = string
-  description = "https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-2003.qcow2"
-}
 ## Centos 8
 variable "enable_centos_8_x86_64_qcow2" {
   description = "Enable Centos 8"
@@ -21,10 +17,6 @@ variable "centos8_name" {
   type        = string
   description = "Centos 8 Image"
   default     = "Centos 8"
-}
-variable "centos8_download_URL" {
-  type        = string
-  description = "http://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.4.2105-20210603.0.x86_64.qcow2"
 }
 ## Generic Variables
 variable "image_container_format" {

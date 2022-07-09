@@ -8,10 +8,6 @@ variable "cirros051_name" {
   description = "Cirros 0.5.1 Image"
   default     = "Cirros 0.5.1"
 }
-variable "cirros051_download_URL" {
-  type        = string
-  description = "https://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img"
-}
 ## Generic Variables
 variable "image_container_format" {
   type        = string
