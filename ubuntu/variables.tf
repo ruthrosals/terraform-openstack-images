@@ -3,11 +3,11 @@ variable "enable_ubuntu_2004_amd64_qcow2" {
   description = "Enable Ubuntu 20.04"
   default     = 0
 }
-variable "ubuntu2004_download_URL"{
+variable "ubuntu2004_download_URL" {
   type = string
   description = "https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-amd64.img"
 }
-variable "ubuntu2004_name"{
+variable "ubuntu2004_name" {
   type = string
   description = "Ubuntu 20.04 Image"
   default = "Ubuntu 20.04"
@@ -17,11 +17,11 @@ variable "enable_ubuntu_1804_amd64_qcow2" {
   description = "Enable Ubuntu 18.04"
   default     = 0
 }
-variable "ubuntu1804_download_URL"{
+variable "ubuntu1804_download_URL" {
   type = string
   description = "https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-amd64-disk1.img"
 }
-variable "ubuntu1804_name"{
+variable "ubuntu1804_name" {
   type = string
   description = "Ubuntu 18.04 Image"
   default = "Ubuntu 18.04"
