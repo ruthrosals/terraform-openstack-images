@@ -37,7 +37,7 @@ variable "min_disk_gb_10" {
 variable "properties_os_distro" {
   type        = string
   description = "Openstack Image os_distro"
-  default     = "fedora"
+  default     = "linux-server"
 }
 variable "properties_architecture" {
   type        = string

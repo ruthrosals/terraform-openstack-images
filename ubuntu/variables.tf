@@ -62,7 +62,7 @@ variable "min_disk_gb_20" {
 variable "properties_os_distro" {
    type = string
    description = "Openstack Image os_distro"
-   default = "ubuntu"
+   default = "linux-server"
 }
 variable "properties_architecture" {
    type = string
