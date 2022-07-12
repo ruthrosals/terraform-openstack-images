@@ -15,6 +15,7 @@ Terraform module for managing QCOW2 images for OpenStack.
 | Fedora | 36 |
 | Ubuntu | 18.04 |
 | Ubuntu | 20.04 |
+| Ubuntu | 22.04 |
 | Rocky | 8.4 |
 
 ## Usage
@@ -37,6 +38,7 @@ module "glance_images" {
   # Fedora
   enable_fedora_server_36_aarch64_qcow2      = true
   # Ubuntu
+  enable_ubuntu_2204_amd64_qcow2             = false
   enable_ubuntu_2004_amd64_qcow2             = false
   enable_ubuntu_1804_amd64_qcow2             = false
   # Rocky
@@ -91,5 +93,6 @@ cd terraform-openstack-images
 * [Rocky 8.4 Images](https://define-technology.com/rocky/rocky-8.4-cloudimage-final.qcow2)
 * [Ubuntu 20.04 Images](https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-amd64.img)
 * [Ubuntu 18.04 Images](https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-amd64-disk1.img)
+* [Ubuntu 22.04 Images](https://cloud-images.ubuntu.com/daily/server/jammy/current/jammy-server-cloudimg-amd64.img)
 
 
