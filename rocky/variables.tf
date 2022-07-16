@@ -8,6 +8,26 @@ variable "rocky84_name" {
   description = "Rocky 8.4 Image"
   default     = "Rocky 8.4"
 }
+## Rocky 8.6
+variable "enable_rocky_86_x86_64_qcow2" {
+  description = "Enable Rocky 8.6"
+  default     = 0
+}
+variable "rocky86_name" {
+  type        = string
+  description = "Rocky 8.6 Image"
+  default     = "Rocky 8.6"
+}
+## Rocky 9
+variable "enable_rocky_9_x86_64_qcow2" {
+  description = "Enable Rocky 9"
+  default     = 0
+}
+variable "rocky9_name" {
+  type        = string
+  description = "Rocky 9 Image"
+  default     = "Rocky 9"
+}
 ## Generic Variables
 variable "image_container_format" {
   type        = string
