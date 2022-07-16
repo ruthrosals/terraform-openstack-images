@@ -46,7 +46,7 @@ module "glance_images" {
   # Rocky
   enable_rocky_84_x86_64_qcow2               = false
   enable_rocky_86_x86_64_qcow2               = false
-  enable_rocky_9_x86_64_qcow2               = false
+  enable_rocky_9_x86_64_qcow2                = false
 }
 ```
 Modify the setting for the images you want loaded to "true" in the above example

@@ -26,5 +26,5 @@ module "rocky" {
   source                       = "./rocky"
   enable_rocky_84_x86_64_qcow2 = var.enable_rocky_84_x86_64_qcow2
   enable_rocky_86_x86_64_qcow2 = var.enable_rocky_86_x86_64_qcow2
-  enable_rocky_9_x86_64_qcow2 = var.enable_rocky_9_x86_64_qcow2
+  enable_rocky_9_x86_64_qcow2  = var.enable_rocky_9_x86_64_qcow2
 }
