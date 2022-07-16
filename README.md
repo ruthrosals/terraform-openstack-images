@@ -45,6 +45,8 @@ module "glance_images" {
   enable_ubuntu_1804_amd64_qcow2             = false
   # Rocky
   enable_rocky_84_x86_64_qcow2               = false
+  enable_rocky_86_x86_64_qcow2               = false
+  enable_rocky_9_x86_64_qcow2               = false
 }
 ```
 Modify the setting for the images you want loaded to "true" in the above example
@@ -68,7 +70,7 @@ Remember to source your OpenStack credentials.
  . /etc/kolla/admin-openrc.sh
 ```
 
-Execute terraform.
+Execute terraform
 
 ```
 terraform init

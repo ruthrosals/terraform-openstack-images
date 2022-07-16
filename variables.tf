@@ -38,3 +38,11 @@ variable "enable_rocky_84_x86_64_qcow2" {
   description = "Enable Rocky 8.4 qcow2 image"
   type        = bool
 }
+variable "enable_rocky_86_x86_64_qcow2" {
+  description = "Enable Rocky 8.6 qcow2 image"
+  type        = bool
+}
+variable "enable_rocky_9_x86_64_qcow2" {
+  description = "Enable Rocky 9 qcow2 image"
+  type        = bool
+}
