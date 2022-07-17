@@ -32,7 +32,7 @@ variable "min_ram_mb_1024" {
 variable "min_disk_gb_10" {
   type        = number
   description = "Openstack Image min_disk_gb"
-  default     = 1
+  default     = 10
 }
 variable "properties_os_distro" {
   type        = string
