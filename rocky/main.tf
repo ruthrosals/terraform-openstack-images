@@ -30,7 +30,7 @@ resource "openstack_images_image_v2" "rocky_server_86_x86_64_qcow2" {
 resource "openstack_images_image_v2" "rocky_server_9_x86_64_qcow2" {
   count            = var.enable_rocky_9_x86_64_qcow2 ? 1 : 0
   name             = var.rocky9_name
-  image_source_url = "https://dl.rockylinux.org/pub/rocky/8.6/images/Rocky-8-GenericCloud.latest.x86_64.qcow2"
+  image_source_url = "https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-9.0-20220706.0.x86_64.qcow2"
   container_format = var.image_container_format
   disk_format      = var.image_disk_format
   visibility       = var.image_visibility
