@@ -88,17 +88,17 @@ cd terraform-openstack-images
 
 ## References
 
-* [Centos 7 Images](https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-2003.qcow2)
-* [Centos 8 Images](http://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.4.2105-20210603.0.x86_64.qcow2)
-* [Cirros 0.5.1 Images](https://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img)
-* [Debian 9 Images](https://cdimage.debian.org/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2)
-* [Debian 10 Images](https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2")
-* [Fedora 36 Images](https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/36/Cloud/x86_64/images/Fedora-Cloud-Base-36-1.5.x86_64.qcow2)
-* [Rocky 8.4 Images](https://define-technology.com/rocky/rocky-8.4-cloudimage-final.qcow2)
-* [Rocky 8.6 Images](https://dl.rockylinux.org/pub/rocky/8.6/images/Rocky-8-GenericCloud.latest.x86_64.qcow2)
-* [Rocky 9 Images](https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-9.0-20220706.0.x86_64.qcow2)
-* [Ubuntu 20.04 Images](https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-amd64.img)
-* [Ubuntu 18.04 Images](https://cloud-images.ubuntu.com/daily/server/xenial/current/xenial-server-cloudimg-amd64-disk1.img)
-* [Ubuntu 22.04 Images](https://cloud-images.ubuntu.com/daily/server/jammy/current/jammy-server-cloudimg-amd64.img)
+* [Centos 7 Image](https://cloud.centos.org/centos/7/images/CentOS-7-x86_64-GenericCloud-2003.qcow2)
+* [Centos 8 Image](http://cloud.centos.org/centos/8/x86_64/images/CentOS-8-GenericCloud-8.4.2105-20210603.0.x86_64.qcow2)
+* [Cirros 0.5.1 Image](https://download.cirros-cloud.net/0.5.1/cirros-0.5.1-x86_64-disk.img)
+* [Debian 9 Image](https://cdimage.debian.org/cdimage/openstack/current-9/debian-9-openstack-amd64.qcow2)
+* [Debian 10 Image](https://cdimage.debian.org/cdimage/openstack/current-10/debian-10-openstack-amd64.qcow2")
+* [Fedora 36 Image](https://download-ib01.fedoraproject.org/pub/fedora/linux/releases/36/Cloud/x86_64/images/Fedora-Cloud-Base-36-1.5.x86_64.qcow2)
+* [Rocky 8.4 Image](https://define-technology.com/rocky/rocky-8.4-cloudimage-final.qcow2)
+* [Rocky 8.6 Image](https://dl.rockylinux.org/pub/rocky/8.6/images/Rocky-8-GenericCloud.latest.x86_64.qcow2)
+* [Rocky 9 Image](https://dl.rockylinux.org/pub/rocky/9/images/x86_64/Rocky-9-GenericCloud-9.0-20220706.0.x86_64.qcow2)
+* [Ubuntu 20.04 Image](https://cloud-images.ubuntu.com/daily/server/focal/current/focal-server-cloudimg-amd64.img)
+* [Ubuntu 18.04 Image](https://cloud-images.ubuntu.com/daily/server/bionic/current/bionic-server-cloudimg-amd64.img)
+* [Ubuntu 22.04 Image](https://cloud-images.ubuntu.com/daily/server/jammy/current/jammy-server-cloudimg-amd64.img)
 
 
