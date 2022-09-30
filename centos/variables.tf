@@ -24,6 +24,11 @@ variable "image_container_format" {
   description = "Openstack Image container_format"
   default     = "bare"
 }
+variable "web_download" {
+  type        = bool
+  description = "import method will be used to let Openstack download the image directly from the remote source."
+  default     = false
+}
 variable "image_disk_format" {
   type        = string
   description = "Openstack Image disk_format"
@@ -53,4 +58,9 @@ variable "properties_architecture" {
   type        = string
   description = "Openstack Image architecture"
   default     = "x86_64"
+}
+variable "properties_ssh_key_req" {
+  type        = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
 }
