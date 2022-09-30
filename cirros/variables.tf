@@ -8,6 +8,11 @@ variable "cirros051_name" {
   description = "Cirros 0.5.1 Image"
   default     = "Cirros 0.5.1"
 }
+variable "web_download" {
+  type        = bool
+  description = "import method will be used to let Openstack download the image directly from the remote source." 
+  default     = false
+}
 ## Generic Variables
 variable "image_container_format" {
   type        = string
@@ -44,3 +49,9 @@ variable "properties_architecture" {
   description = "Openstack Image architecture"
   default     = "x86_64"
 }
+variable "properties_ssh_key_req" {
+  type	      = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
+}
+
