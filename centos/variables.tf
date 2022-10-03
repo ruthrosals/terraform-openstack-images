@@ -24,7 +24,7 @@ variable "image_container_format" {
   description = "Openstack Image container_format"
   default     = "bare"
 }
-variable "web_download" {
+variable "centos_web_download" {
   type        = bool
   description = "import method will be used to let Openstack download the image directly from the remote source."
   default     = false
@@ -59,7 +59,12 @@ variable "properties_architecture" {
   description = "Openstack Image architecture"
   default     = "x86_64"
 }
-variable "properties_ssh_key_req" {
+variable "properties_centos_8_ssh_key_req" {
+  type        = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
+}
+variable "properties_centos_7_ssh_key_req" {
   type        = bool
   description = "Openstack Image Requires SSH Key"
   default     = false

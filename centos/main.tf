@@ -8,11 +8,11 @@ resource "openstack_images_image_v2" "centos-7-x86_64-qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_10
-  web_download     = var.web_download
+  web_download     = var.centos_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_centos_7_ssh_key_req
   }
 }
 resource "openstack_images_image_v2" "centos_8_x86_64_qcow2" {
@@ -24,10 +24,10 @@ resource "openstack_images_image_v2" "centos_8_x86_64_qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_10
-  web_download     = var.web_download
+  web_download     = var.centos_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_centos_8_ssh_key_req
   }
 }

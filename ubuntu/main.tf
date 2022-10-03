@@ -7,11 +7,11 @@ resource "openstack_images_image_v2" "ubuntu-2204-jammy-amd64-qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_20
-  web_download     = var.web_download
+  web_download     = var.ubuntu_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_ubuntu_2204_ssh_key_req
   }
 }
 resource "openstack_images_image_v2" "ubuntu-2004-focal-amd64-qcow2" {
@@ -23,11 +23,11 @@ resource "openstack_images_image_v2" "ubuntu-2004-focal-amd64-qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_20
-  web_download     = var.web_download
+  web_download     = var.ubuntu_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_ubuntu_2004_ssh_key_req
   }
 }
 resource "openstack_images_image_v2" "ubuntu-1804-bionic-amd64-qcow2" {
@@ -39,10 +39,10 @@ resource "openstack_images_image_v2" "ubuntu-1804-bionic-amd64-qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_10
-  web_download     = var.web_download
+  web_download     = var.ubuntu_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_ubuntu_1804_ssh_key_req
   }
 }
