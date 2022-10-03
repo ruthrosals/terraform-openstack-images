@@ -29,7 +29,7 @@ variable "image_disk_format" {
   description = "Openstack Image disk_format"
   default     = "qcow2"
 }
-variable "web_download" {
+variable "debian_web_download" {
   type        = bool
   description = "import method will be used to let Openstack download the image directly from the remote source."
   default     = false
@@ -59,7 +59,12 @@ variable "properties_architecture" {
   description = "Openstack Image architecture"
   default     = "x86_64"
 }
-variable "properties_ssh_key_req" {
+variable "properties_debian_9_ssh_key_req" {
+  type        = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
+}
+variable "properties_debian_10_ssh_key_req" {
   type        = bool
   description = "Openstack Image Requires SSH Key"
   default     = false

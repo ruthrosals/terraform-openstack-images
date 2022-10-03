@@ -8,10 +8,10 @@ resource "openstack_images_image_v2" "cirros-051-x86_64-qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_256
   min_disk_gb      = var.min_disk_gb_1
-  web_download     = var.web_download
+  web_download     = var.cirros_web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
-    ssh_required = var.properties_ssh_key_req
+    ssh_required = var.properties_cirros_051_ssh_key_req
   }
 }

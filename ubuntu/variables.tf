@@ -59,12 +59,22 @@ variable "min_disk_gb_20" {
   description = "Openstack Image min_disk_gb"
   default     = 10
 }
-variable "web_download" {
+variable "ubuntu_web_download" {
   type        = bool
   description = "import method will be used to let Openstack download the image directly from the remote source."
   default     = false
 }
-variable "properties_ssh_key_req" {
+variable "properties_ubuntu_1804_ssh_key_req" {
+  type        = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
+}
+variable "properties_ubuntu_2004_ssh_key_req" {
+  type        = bool
+  description = "Openstack Image Requires SSH Key"
+  default     = false
+}
+variable "properties_ubuntu_2204_ssh_key_req" {
   type        = bool
   description = "Openstack Image Requires SSH Key"
   default     = false
