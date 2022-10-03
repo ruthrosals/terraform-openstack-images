@@ -8,9 +8,11 @@ resource "openstack_images_image_v2" "rocky_server_84_x86_64_qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_20
+  web_download     = var.web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
+    ssh_required = var.properties_ssh_key_req
   }
 }
 resource "openstack_images_image_v2" "rocky_server_86_x86_64_qcow2" {
@@ -22,9 +24,11 @@ resource "openstack_images_image_v2" "rocky_server_86_x86_64_qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_20
+  web_download     = var.web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
+    ssh_required = var.properties_ssh_key_req
   }
 }
 resource "openstack_images_image_v2" "rocky_server_9_x86_64_qcow2" {
@@ -36,8 +40,10 @@ resource "openstack_images_image_v2" "rocky_server_9_x86_64_qcow2" {
   visibility       = var.image_visibility
   min_ram_mb       = var.min_ram_mb_1024
   min_disk_gb      = var.min_disk_gb_20
+  web_download     = var.web_download
   properties = {
     os_distro    = var.properties_os_distro
     architecture = var.properties_architecture
+    ssh_required = var.properties_ssh_key_req
   }
 }
