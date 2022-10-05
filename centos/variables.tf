@@ -64,7 +64,7 @@ variable "properties_centos_8_ssh_key_req" {
   description = "Openstack Image Requires SSH Key"
   default     = false
 }
-variable "properties_ssh_key_req" {
+variable "properties_centos_7_ssh_key_req" {
   type        = bool
   description = "Openstack Image Requires SSH Key"
   default     = false
