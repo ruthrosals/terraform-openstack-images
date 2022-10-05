@@ -27,26 +27,39 @@ Include something like the following in your code:
 ```
 # Operating System Images for Glance using terraform-openstack-images module
 module "glance_images" {
-  source = "github.com/breqwatr/terraform-openstack-images"
+  source = "gitlab.com/breqwatr/terraform-openstack-images.git"
+  #option to allow Openstack to downlaod the images directly to the hosts (by-pass local caching)
+  enable_web_download = true
   # Centos
-  enable_centos_7_x86_64_qcow2               = false
-  enable_centos_8_x86_64_qcow2               = false
+  enable_centos_7_x86_64_qcow2 = true
+  enable_centos_8_x86_64_qcow2 = true
+  enable_ssh_key_req_centos_8 = true
   # Cirrus
-  enable_cirros_040_x86_64_qcow2             = false
-  enable_cirros_040_x86_64_raw               = false
+  enable_cirros_051_x86_64_qcow2 = true
+  enable_ssh_key_req_cirros_051 = true
   # Debian
-  enable_debian_9_amd64_qcow2                = false
-  enable_debian_10_amd64_qcow2               = false
+  enable_debian_9_amd64_qcow2  = true
+  enable_debian_10_amd64_qcow2 = true
+  enable_ssh_key_req_debian_9 = true
+  enable_ssh_key_req_debian_10 = true
   # Fedora
-  enable_fedora_server_36_aarch64_qcow2      = true
+  enable_fedora_server_36_x86_64_qcow2 = true
+  enable_ssh_key_req_fedora_36 = true
   # Ubuntu
-  enable_ubuntu_2204_amd64_qcow2             = false
-  enable_ubuntu_2004_amd64_qcow2             = false
-  enable_ubuntu_1804_amd64_qcow2             = false
+  enable_ubuntu_2204_amd64_qcow2 = true
+  enable_ubuntu_2004_amd64_qcow2 = true
+  enable_ubuntu_1804_amd64_qcow2 = true
+  enable_ssh_key_req_ubuntu_2204 = true
+  enable_ssh_key_req_ubuntu_2004 = true
+  enable_ssh_key_req_ubuntu_1804 = true
+
   # Rocky
-  enable_rocky_84_x86_64_qcow2               = false
-  enable_rocky_86_x86_64_qcow2               = false
-  enable_rocky_9_x86_64_qcow2                = false
+  enable_rocky_84_x86_64_qcow2 = true
+  enable_rocky_86_x86_64_qcow2 = true
+  enable_rocky_9_x86_64_qcow2  = true
+  enable_ssh_key_req_rocky_84 = true
+  enable_ssh_key_req_rocky_86 = true
+  enable_ssh_key_req_rocky_9 = true
 }
 ```
 Modify the setting for the images you want loaded to "true" in the above example
@@ -63,11 +76,29 @@ Change the line from false to true like in the following example.
 enable_centos_8_x86_64_qcow2 = true
 ```
 
+You can toggle the web_downloads key, this option if true will tell openstack 
+to download the images from source directly, if false the images will download to 
+a local cache (default to ~/.terraform/) and be transfered to openstack from there.
+
+If not mentioned, defaults to false. 
+
+```
+enable_web_download = {true|false}
+```
+
+You can toggle the option for an image to require SSH key (meaning a user will need 
+an SSH key applied to thier openstack profile in order to build this image) PER OS version. 
+
+If not mentioned defaults to false. 
+
+```
+enable_ssh_key_req_rocky_9 = {true|false} 
+```
 
 Remember to source your OpenStack credentials.
 
 ```
- . /etc/kolla/admin-openrc.sh
+source /etc/kolla/admin-openrc.sh
 ```
 
 Execute terraform
@@ -82,7 +113,7 @@ terraform apply -auto-approve
 
 Download the source
 ```
-git clone https://github.com/breqwatr/terraform-openstack-images
+git clone https://gitlab.com/breqwatr/terraform-openstack-images
 cd terraform-openstack-images
 ```
 
