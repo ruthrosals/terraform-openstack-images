@@ -8,7 +8,7 @@ variable "cirros051_name" {
   description = "Cirros 0.5.1 Image"
   default     = "Cirros 0.5.1"
 }
-variable "web_download" {
+variable "cirros_web_download" {
   type        = bool
   description = "import method will be used to let Openstack download the image directly from the remote source." 
   default     = false

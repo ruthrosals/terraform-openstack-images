@@ -14,7 +14,7 @@ variable "image_container_format" {
   description = "Openstack Image container_format"
   default     = "bare"
 }
-variable "web_download" {
+variable "fedora_web_download" {
   type        = bool
   description = "import method will be used to let Openstack download the image directly from the remote source."
   default     = false
